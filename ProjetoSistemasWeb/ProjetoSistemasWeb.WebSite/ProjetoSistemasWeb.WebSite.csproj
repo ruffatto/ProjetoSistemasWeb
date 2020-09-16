@@ -207,11 +207,8 @@
     <Content Include="scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\Login\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Relatorios\Produtos.cshtml" />
-=======
     <Content Include="Views\Relatorios\Valores.cshtml" />
->>>>>>> 47203ad0eca8514d8628a99eb0367871fba00fac
     <Content Include="Views\Relatorios\VariacaoDePrecos.cshtml" />
     <Content Include="Views\Relatorios\Mapa.cshtml" />
     <None Include="Web.Debug.config">
