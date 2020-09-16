@@ -14,7 +14,7 @@ namespace ProjetoSistemasWeb.WebSite.Controllers
             return View();
         }
 
-        public ActionResult Valores()
+        public ActionResult Produtos()
         {
             return View();
         }

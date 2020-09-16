@@ -208,7 +208,6 @@
     <Content Include="scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Relatorios\Produtos.cshtml" />
-    <Content Include="Views\Relatorios\Valores.cshtml" />
     <Content Include="Views\Relatorios\VariacaoDePrecos.cshtml" />
     <Content Include="Views\Relatorios\Mapa.cshtml" />
     <None Include="Web.Debug.config">
