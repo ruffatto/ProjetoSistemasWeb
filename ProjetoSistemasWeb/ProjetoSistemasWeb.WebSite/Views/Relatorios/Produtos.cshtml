@@ -3,46 +3,54 @@
     ViewBag.Title = "Produtos";
 }
 
-<h2>Valores</h2>
+<h2>Produtos</h2>
+
+<table>
+    <tr>
+        <td>Nome do Produto: <input type="text" maxlength="40" size="20" required /></td>
+    </tr>
+    <tr>
+        <td>Categoria:
+            <select id = categoria>
+                <option>Quarto</option>
+                <option>Cozinha</option>
+                <option>Sala</option>
+                <option>Móveis</option>
+            </select>   
+        </td>
+    </tr>
+</table>
+
 <div class="card mb-4">
     <div class="card-header">
         <i class="fas fa-table mr-1"></i>
-        DataTable Example
+        Tabela de Produtos
     </div>
     <div class="card-body">
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
+                        <th>Imagem</th>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Acessos</th>
+                        <th>Preço</th>
                     </tr>
                 </thead>
-                <tfoot>
-                    <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
-                    </tr>
-                </tfoot>
                 <tbody>
                     <tr>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>$320,800</td>
+                        <td>Imagem</td>
+                        <td>01</td>
+                        <td>Produto Teste</td>
+                        <td>Categoria Sofá</td>
+                        <td>1.000</td>
+                        <td>R$320,800</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
 </div>
+<button name="button">Exportar</button>
