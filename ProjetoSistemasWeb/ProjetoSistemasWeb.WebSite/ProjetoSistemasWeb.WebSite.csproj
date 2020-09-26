@@ -138,6 +138,7 @@
     <Content Include="src\assets\demo\chart-pie-demo.js" />
     <Content Include="src\assets\demo\datatables-demo.js" />
     <Content Include="src\assets\img\error-404-monochrome.svg" />
+    <Content Include="src\assets\img\teste.JPG" />
     <Content Include="src\js\scripts.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\_LayoutTemplate.cshtml" />
@@ -206,10 +207,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="scripts\jquery-3.4.1.min.map" />
-    <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Relatorios\Produtos.cshtml" />
     <Content Include="Views\Relatorios\VariacaoDePrecos.cshtml" />
     <Content Include="Views\Relatorios\Mapa.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
