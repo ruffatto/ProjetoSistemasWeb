@@ -145,12 +145,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CadastrosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RelatoriosController.cs" />
+    <Compile Include="Filters\FiltroExcessao.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="models\Categoria.cs" />
+    <Compile Include="models\Produtos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +215,10 @@
     <Content Include="Views\Relatorios\VariacaoDePrecos.cshtml" />
     <Content Include="Views\Relatorios\Mapa.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Cadastros\Produtos.cshtml" />
+    <Content Include="Views\Cadastros\Categorias.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Cadastros\NovoProduto.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -220,7 +228,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

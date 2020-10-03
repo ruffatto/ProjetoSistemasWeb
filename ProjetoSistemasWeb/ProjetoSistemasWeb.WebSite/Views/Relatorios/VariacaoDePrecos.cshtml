@@ -4,23 +4,25 @@
 }
 
 <h2>Variação de Preços</h2>
+
+<table>
+    <tr>
+        <td colspan="2">Nome do Produto: <input type="text" maxlength="40" size="20" required /></td>
+    </tr>
+    <tr>
+        <td>Inicial:<input type="date" min="01/01/1900" max="31/12/3000" required /></td>
+        <td>Final:<input type="date" min="01/01/1900" max="31/12/3000" required /></td>
+    </tr>
+</table>
+
 <div class="row">
     <div class="col-xl-6">
-        <div class="card-header">
-            <table>
-                <tr>
-                    <td colspan="2">Nome do Produto: <input type="text" maxlength="40" size="20" required /></td>
-                </tr>
-                <tr>
-                    <td>Inicial:<input type="date" min="01/01/1900" max="31/12/3000" required /></td>
-                    <td>Final:<input type="date" min="01/01/1900" max="31/12/3000" required /></td>
-                </tr>
-            </table>
-        </div>
         <div class="card mb-4">
-            <div class="card-body">
-                <canvas id="myBarChart" width="100" height="40"></canvas>
+            <div class="card-header">
+                <i class="fas fa-chart-line"></i>
+                Variação de Preço do Produto:
             </div>
+            <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
         </div>
     </div>
     <div class="col-xl-6">
@@ -31,4 +33,3 @@
         </form>
     </div>
 </div>
-
