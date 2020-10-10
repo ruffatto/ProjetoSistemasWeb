@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Mapa";
+}
+
+<h2>Mapa</h2>
+
+<table>
+    <tr>
+        <td colspan="2">Nome do Produto: <input type="text" maxlength="40" size="20" required /></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            Categoria:
+            <select id=categoria>
+                <option>Quarto</option>
+                <option>Cozinha</option>
+                <option>Sala</option>
+                <option>Móveis</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Periodo de <input type="date" min="01/01/1900" max="31/12/3000" required /></td>
+        <td>Até <input type="date" min="01/01/1900" max="31/12/3000" required /></td>
+    </tr>
+</table>
+
+<script src="js/jquery.vmap.js"></script>
+<script src="js/jquery.vmap.world.js"></script>
+<script src="js/jquery.vmap.sampledata.js"></script>
+
+<script>
+    jQuery('#vmap').vectorMap({
+        map: 'world_en',
+        backgroundColor: #fff,
+        color: '#ffffff',
+        hoverOpacity: 0.7,
+        selectedColor: '#666666',
+        enableZoom: False,
+        showTooltip: true,
+        values: sample_data,
+        scaleColors: ['#C8EEFF', '#006491'],
+        normalizeFunction: 'polynomial'
+    });
+</script>
+
+<div id="vmap" style="width: 600px; height: 400px;"></div>
