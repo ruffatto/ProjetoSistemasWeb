@@ -25,24 +25,24 @@
         <td>Até <input type="date" min="01/01/1900" max="31/12/3000" required /></td>
     </tr>
 </table>
+<div id="vmap" style="width: 600px; height: 400px;"></div>
 
-<script src="js/jquery.vmap.js"></script>
-<script src="js/jquery.vmap.world.js"></script>
-<script src="js/jquery.vmap.sampledata.js"></script>
+<script src="~/scripts/jQuery.js"></script>
+<script src="~/scripts/jquery.vmap.js"></script>
+<script src="~/scripts/jquery.vmap.world.js"></script>
+<script src="~/scripts/jquery.vmap.sampledata.js"></script>
 
 <script>
     jQuery('#vmap').vectorMap({
         map: 'world_en',
-        backgroundColor: #fff,
+        backgroundColor: '#ffffff',
         color: '#ffffff',
         hoverOpacity: 0.7,
         selectedColor: '#666666',
-        enableZoom: False,
+        enableZoom: false,
         showTooltip: true,
         values: sample_data,
         scaleColors: ['#C8EEFF', '#006491'],
         normalizeFunction: 'polynomial'
     });
 </script>
-
-<div id="vmap" style="width: 600px; height: 400px;"></div>

@@ -286,3 +286,9 @@ C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSist
 C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.WebSite\obj\Debug\ProjetoSistemasWeb.WebSite.csproj.CopyComplete
 C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.WebSite\obj\Debug\ProjetoSistemasWeb.WebSite.dll
 C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.WebSite\obj\Debug\ProjetoSistemasWeb.WebSite.pdb
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.WebSite\bin\pt-br\System.Web.Razor.resources.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.WebSite\bin\pt-br\System.Web.Webpages.resources.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.WebSite\bin\pt-br\System.Web.Webpages.Deployment.resources.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.WebSite\bin\pt-br\System.Web.Webpages.Razor.resources.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.WebSite\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.WebSite\bin\pt-br\System.Web.Mvc.resources.dll
