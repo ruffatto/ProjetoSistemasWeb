@@ -20,6 +20,7 @@ namespace WebApi.Controllers
                 {
                     Codigo = 1,
                     Descricao = "Produto 1",
+                    Imagem = "gs://leitura-9ce08.appspot.com/Imagens/Busca de Imagem.png",
                     Id = Guid.NewGuid(),
                     Acessos = 0,
                     Preco = 100,
@@ -34,6 +35,7 @@ namespace WebApi.Controllers
                 {
                     Codigo = 2,
                     Descricao = "Produto 2",
+                    Imagem = "gs://leitura-9ce08.appspot.com/Imagens/Busca de Imagem.png",
                     Id = Guid.NewGuid(),
                     Acessos = 0,
                     Preco = 200,
@@ -48,6 +50,7 @@ namespace WebApi.Controllers
                 {
                     Codigo = 3,
                     Descricao = "Produto 3",
+                    Imagem = "gs://leitura-9ce08.appspot.com/Imagens/Busca de Imagem.png",
                     Id = Guid.NewGuid(),
                     Acessos = 0,
                     Preco = 300,
@@ -74,6 +77,7 @@ namespace WebApi.Controllers
                 {
                     Codigo = 1,
                     Descricao = "Produto 1",
+                    Imagem = "gs://leitura-9ce08.appspot.com/Imagens/Busca de Imagem.png",
                     Id = id,
                     Acessos = 0,
                     Preco = 100,
