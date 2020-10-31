@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjetoSistemasWeb.Aplication;
+using ProjetoSistemasWeb.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -8,60 +10,50 @@ using WebApi.Models;
 
 namespace WebApi.Controllers
 {
+    /// <summary>
+    /// API responsável por fazer a manutenção de Produtos
+    /// </summary>
+
     public class ProdutosController : ApiController
     {
+        /// <summary>
+        /// Este método retorna uma listagem de todos os produtos
+        /// </summary>
+        /// <returns>Não possui retorno</returns>
         public HttpResponseMessage Get()
         {
-            List<Produtos> produtos = new List<Produtos>();
-
             try
             {
-                produtos.Add(new Produtos()
-                {
-                    Codigo = 1,
-                    Descricao = "Produto 1",
-                    Imagem = "gs://leitura-9ce08.appspot.com/Imagens/Busca de Imagem.png",
-                    Id = Guid.NewGuid(),
-                    Acessos = 0,
-                    Preco = 100,
-                    Categoria = new Categorias()
-                    {
-                        Descricao = "Cama",
-                        Id = Guid.NewGuid()
-                    }
-                });
+                List<Produtos> produtosModel = new List<Produtos>();
+                
+                ProdutosRepository produtosRepository = new ProdutosRepository();
+                ProdutosAplication produtosAplication = new ProdutosAplication(produtosRepository);
 
-                produtos.Add(new Produtos()
+                List<ProjetoSistemasWeb.Domain.Entities.Produtos> produtos = produtosAplication.ProcurarTodos();
+                
+                foreach(var prod in produtos)
                 {
-                    Codigo = 2,
-                    Descricao = "Produto 2",
-                    Imagem = "gs://leitura-9ce08.appspot.com/Imagens/Busca de Imagem.png",
-                    Id = Guid.NewGuid(),
-                    Acessos = 0,
-                    Preco = 200,
-                    Categoria = new Categorias()
+                    produtosModel.Add(new Produtos()
                     {
-                        Descricao = "Sofá",
-                        Id = Guid.NewGuid()
-                    }
-                });
+                        Descricao = prod.Descricao,
+                        Id = prod.Id,
+                        Codigo = prod.Codigo,
+                        Imagem = prod.Imagem,
+                        Acessos = prod.Acessos,
+                        Preco = prod.Preco,
+                        Categoria = new Categorias()
+                        {
+                            Id = prod.Categoria.Id,
+                            Descricao = prod.Categoria.Descricao
+                        }
+                    });
+                }
 
-                produtos.Add(new Produtos()
-                {
-                    Codigo = 3,
-                    Descricao = "Produto 3",
-                    Imagem = "gs://leitura-9ce08.appspot.com/Imagens/Busca de Imagem.png",
-                    Id = Guid.NewGuid(),
-                    Acessos = 0,
-                    Preco = 300,
-                    Categoria = new Categorias()
-                    {
-                        Descricao = "Mesa",
-                        Id = Guid.NewGuid()
-                    }
-                });
-
-                return Request.CreateResponse(HttpStatusCode.OK, produtos);
+                return Request.CreateResponse(HttpStatusCode.OK, produtosModel);
+            }
+            catch (ApplicationException ap)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ap);
             }
             catch (Exception e)
             {
@@ -69,6 +61,11 @@ namespace WebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Este método retorna um produto apartir de seu ID
+        /// </summary>
+        /// <param name="id">Id relativo a chave de busca para o produto</param>
+        /// <returns>Retorna um Produto</returns>
         public HttpResponseMessage Get(Guid id)
         {
             try

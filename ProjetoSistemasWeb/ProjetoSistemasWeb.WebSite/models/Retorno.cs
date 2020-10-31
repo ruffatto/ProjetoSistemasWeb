@@ -5,9 +5,8 @@ using System.Web;
 
 namespace ProjetoSistemasWeb.WebSite.models
 {
-    public class Categoria
+    public class Retorno
     {
-        public Guid Id { get; set; }
-        public string Descricao { get; set; }
+        public string Message { get; set; }
     }
 }

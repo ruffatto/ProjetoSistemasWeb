@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_Data/XmlDocument.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -248,6 +249,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoSistemasWeb.Aplication\ProjetoSistemasWeb.Aplication.csproj">
+      <Project>{c9a8905d-bd36-4147-b812-65d2137d17d9}</Project>
+      <Name>ProjetoSistemasWeb.Aplication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjetoSistemasWeb.Domain\ProjetoSistemasWeb.Domain.csproj">
+      <Project>{F15F0351-D88D-4F4A-8436-BEBD96B0278C}</Project>
+      <Name>ProjetoSistemasWeb.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjetoSistemasWeb.Repository\ProjetoSistemasWeb.Repository.csproj">
+      <Project>{24D3C237-D8C3-48DB-AA07-25BD71801926}</Project>
+      <Name>ProjetoSistemasWeb.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

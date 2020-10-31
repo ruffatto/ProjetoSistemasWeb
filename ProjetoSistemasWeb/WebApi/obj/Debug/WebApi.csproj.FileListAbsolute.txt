@@ -93,3 +93,10 @@ C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\WebApi\obj\
 C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\WebApi\obj\Debug\WebApi.csproj.CopyComplete
 C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\WebApi\obj\Debug\WebApi.dll
 C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\WebApi\obj\Debug\WebApi.pdb
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\WebApi\bin\XmlDocument.xml
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\WebApi\bin\ProjetoSistemasWeb.Aplication.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\WebApi\bin\ProjetoSistemasWeb.Domain.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\WebApi\bin\ProjetoSistemasWeb.Repository.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\WebApi\bin\ProjetoSistemasWeb.Aplication.pdb
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\WebApi\bin\ProjetoSistemasWeb.Domain.pdb
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\WebApi\bin\ProjetoSistemasWeb.Repository.pdb
