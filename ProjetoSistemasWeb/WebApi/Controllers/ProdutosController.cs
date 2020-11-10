@@ -2,6 +2,7 @@
 using ProjetoSistemasWeb.Repository;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -25,8 +26,7 @@ namespace WebApi.Controllers
             try
             {
                 List<Produtos> produtosModel = new List<Produtos>();
-                
-                ProdutosRepository produtosRepository = new ProdutosRepository();
+                ProdutosRepository produtosRepository = new ProdutosRepository(ConfigurationManager.ConnectionStrings["conexao"].ToString());
                 ProdutosAplication produtosAplication = new ProdutosAplication(produtosRepository);
 
                 List<ProjetoSistemasWeb.Domain.Entities.Produtos> produtos = produtosAplication.ProcurarTodos();
@@ -70,22 +70,35 @@ namespace WebApi.Controllers
         {
             try
             {
-                Produtos prod = new Produtos()
-                {
-                    Codigo = 1,
-                    Descricao = "Produto 1",
-                    Imagem = "gs://leitura-9ce08.appspot.com/Imagens/Busca de Imagem.png",
-                    Id = id,
-                    Acessos = 0,
-                    Preco = 100,
-                    Categoria = new Categorias()
-                    {
-                        Descricao = "Cama",
-                        Id = Guid.NewGuid()
-                    }
-                };
+                Produtos produtoModel = null;
+                ProdutosRepository produtosRepository = new ProdutosRepository(ConfigurationManager.ConnectionStrings["conexao"].ToString());
+                ProdutosAplication produtosAplication = new ProdutosAplication(produtosRepository);
 
-                return Request.CreateResponse(HttpStatusCode.OK, prod);
+                ProjetoSistemasWeb.Domain.Entities.Produtos produto = produtosAplication.Procurar(id);
+
+                if (produto != null)
+                {
+                    produtoModel = new Produtos()
+                    {
+                        Descricao = produto.Descricao,
+                        Id = produto.Id,
+                        Codigo = produto.Codigo,
+                        Imagem = produto.Imagem,
+                        Acessos = produto.Acessos,
+                        Preco = produto.Preco,
+                        Categoria = new Categorias()
+                        {
+                            Id = produto.Categoria.Id,
+                            Descricao = produto.Categoria.Descricao
+                        }
+                    };
+
+                    return Request.CreateResponse(HttpStatusCode.OK, produtoModel);
+                }
+                else
+                {
+                    return Request.CreateResponse(HttpStatusCode.NotFound);
+                }
             }
             catch (Exception e)
             {
@@ -100,8 +113,28 @@ namespace WebApi.Controllers
                 //Inclusão do CLiente na base de dados
                 //Essa inclusão retorna um Id
                 //Id retorna para o requisitante do serviço
-                Guid id = Guid.NewGuid();
-                return Request.CreateResponse(HttpStatusCode.OK, Convert.ToString(id));
+                ProdutosRepository produtosRepository = new ProdutosRepository(ConfigurationManager.ConnectionStrings["conexao"].ToString());
+                ProdutosAplication produtosAplication = new ProdutosAplication(produtosRepository);
+
+                //Converter o model para uma entidade de dominio
+
+                ProjetoSistemasWeb.Domain.Entities.Produtos produtosDomain = new ProjetoSistemasWeb.Domain.Entities.Produtos()
+                {
+                    Id = produto.Id,
+                    Codigo = produto.Codigo,
+                    Descricao = produto.Descricao,
+                    Imagem = produto.Imagem,
+                    Acessos = produto.Acessos,
+                    Preco = produto.Preco,
+                    Categoria = new ProjetoSistemasWeb.Domain.Entities.Categorias()
+                    {
+                        Descricao = produto.Descricao
+                    }
+                };
+
+                produtosAplication.Inserir(produtosDomain);
+
+                return Request.CreateResponse(HttpStatusCode.OK, Convert.ToString(produtosDomain.Id));
             }
             catch (Exception e)
             {
@@ -116,6 +149,27 @@ namespace WebApi.Controllers
                 //Alterar o CLiente na base de dados
                 //Essa alteração retorna um Id
                 //Id retorna para o requisitante do serviço
+                ProdutosRepository produtosRepository = new ProdutosRepository(ConfigurationManager.ConnectionStrings["conexao"].ToString());
+                ProdutosAplication produtosAplication = new ProdutosAplication(produtosRepository);
+
+                //Converter o model para uma entidade de dominio
+
+                ProjetoSistemasWeb.Domain.Entities.Produtos produtosDomain = new ProjetoSistemasWeb.Domain.Entities.Produtos()
+                {
+                    Id = id,
+                    Codigo = produto.Codigo,
+                    Descricao = produto.Descricao,
+                    Imagem = produto.Imagem,
+                    Acessos = produto.Acessos,
+                    Preco = produto.Preco,
+                    Categoria = new ProjetoSistemasWeb.Domain.Entities.Categorias()
+                    {
+                        Descricao = produto.Descricao
+                    }
+                };
+
+                produtosAplication.Alterar(produtosDomain);
+
                 return Request.CreateResponse(HttpStatusCode.OK, Convert.ToString(id));
             }
             catch (Exception e)
@@ -130,7 +184,13 @@ namespace WebApi.Controllers
             {
                 //Excluir o CLiente na base de dados
                 //Essa exclusão retorna um Verdadeiro ou Falso
-                return Request.CreateResponse(HttpStatusCode.OK, true);
+                ProdutosRepository produtosRepository = new ProdutosRepository(ConfigurationManager.ConnectionStrings["conexao"].ToString());
+                ProdutosAplication produtosAplication = new ProdutosAplication(produtosRepository);
+
+
+                var retorno = produtosAplication.Excluir(id);
+
+                return Request.CreateResponse(HttpStatusCode.OK, Convert.ToString(retorno));
             }
             catch (Exception e)
             {
