@@ -1,0 +1,9 @@
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Repository\bin\Debug\ProjetoSistemasWeb.Repository.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Repository\bin\Debug\ProjetoSistemasWeb.Repository.pdb
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Repository\bin\Debug\ProjetoSistemasWeb.Domain.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Repository\bin\Debug\ProjetoSistemasWeb.Domain.pdb
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Repository\obj\Debug\ProjetoSistemasWeb.Repository.csprojAssemblyReference.cache
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Repository\obj\Debug\ProjetoSistemasWeb.Repository.csproj.CoreCompileInputs.cache
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Repository\obj\Debug\ProjetoSistemasWeb.Repository.csproj.CopyComplete
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Repository\obj\Debug\ProjetoSistemasWeb.Repository.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Repository\obj\Debug\ProjetoSistemasWeb.Repository.pdb

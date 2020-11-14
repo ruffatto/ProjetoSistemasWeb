@@ -14,10 +14,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/04/2020 17:22:38</publishTime>
     </File>
     <File Include="bin/ProjetoSistemasWeb.WebSite.dll">
-      <publishTime>10/04/2020 17:30:24</publishTime>
+      <publishTime>10/13/2020 19:33:40</publishTime>
     </File>
     <File Include="bin/ProjetoSistemasWeb.WebSite.pdb">
-      <publishTime>10/04/2020 17:30:24</publishTime>
+      <publishTime>10/13/2020 19:33:40</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>10/04/2020 17:22:38</publishTime>
@@ -322,6 +322,81 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="scripts/jquery-3.4.1.slim.min.map">
       <publishTime>10/04/2020 17:22:37</publishTime>
     </File>
+    <File Include="scripts/jQuery.js">
+      <publishTime>10/09/2020 22:14:49</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.algeria.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.argentina.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.brazil.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.canada.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.croatia.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.europe.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.france.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.germany.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.greece.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.indonesia.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.iran.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.iraq.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.new_regions_france.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.russia.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.sampledata.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.serbia.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.tunisia.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.turkey.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.ukraine.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.usa.counties.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.usa.districts.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.usa.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
+    <File Include="scripts/jquery.vmap.world.js">
+      <publishTime>02/28/2018 22:46:38</publishTime>
+    </File>
     <File Include="scripts/modernizr-2.8.3.js">
       <publishTime>10/04/2020 17:22:37</publishTime>
     </File>
@@ -491,13 +566,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/04/2020 17:22:36</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>10/04/2020 17:22:36</publishTime>
+      <publishTime>10/09/2020 22:50:07</publishTime>
     </File>
     <File Include="Views/Login/Index.cshtml">
       <publishTime>10/04/2020 17:22:36</publishTime>
     </File>
     <File Include="Views/Relatorios/Mapa.cshtml">
-      <publishTime>10/04/2020 17:22:36</publishTime>
+      <publishTime>10/09/2020 22:50:07</publishTime>
     </File>
     <File Include="Views/Relatorios/Produtos.cshtml">
       <publishTime>10/04/2020 17:22:36</publishTime>
