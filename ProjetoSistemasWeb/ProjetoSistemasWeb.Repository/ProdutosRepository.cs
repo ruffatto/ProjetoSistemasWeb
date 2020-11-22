@@ -134,7 +134,7 @@ namespace ProjetoSistemasWeb.Repository
                         //Inserir a Categoria
                         comando.CommandText = "Insert into categorias " +
                                                 " (id,produtoid,descricao) " +
-                                                " Values (@id,@descricao)";
+                                                " Values (@id,@produtoid,@descricao)";
 
                         comando.Parameters.AddWithValue("id", produtos.Categoria.Id);
                         comando.Parameters.AddWithValue("produtoid", produtos.Id);
