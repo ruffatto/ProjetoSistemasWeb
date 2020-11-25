@@ -9,8 +9,8 @@ namespace WebApi.Models
     {
         public Guid Id { get; set; }
         public int Codigo { get; set; }
-        public String Descricao { get; set; }
-        public String Imagem { get; set; }
+        public string Descricao { get; set; }
+        public string Imagem { get; set; }
         public Categorias Categoria { get; set; }
         public int Acessos { get; set; }
         public float Preco { get; set; }
