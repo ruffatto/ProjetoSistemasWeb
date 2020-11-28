@@ -142,6 +142,7 @@ namespace WebApi.Controllers
             }
         }
 
+        [Authorize]
         public HttpResponseMessage Put(Guid id, [FromBody] Produtos produto)
         {
             try
