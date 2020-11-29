@@ -35,7 +35,7 @@ namespace ProjetoSistemasWeb.Repository
                         // Inserir o Produto
                         comando.CommandText = "Update public.produtos " +
                                                 " set codigo = @codigo, descricao = @descricao, acessos = @acessos," +
-                                                "preco = @preco, imagem = @imagem " +
+                                                "preco = @preco, imagem = @imagem, idcategoria = @idcategoria " +
                                                 "Where id = @id ";
 
                         comando.Parameters.AddWithValue("id", produtos.Id);
@@ -44,17 +44,7 @@ namespace ProjetoSistemasWeb.Repository
                         comando.Parameters.AddWithValue("acessos", produtos.Acessos);
                         comando.Parameters.AddWithValue("preco", produtos.Preco);
                         comando.Parameters.AddWithValue("imagem", produtos.Imagem);
-                        //Executando comando
-                        comando.ExecuteNonQuery();
-
-                        //Inserir a Categoria
-                        comando.CommandText = "Update public.categorias " +
-                                                " set descricao = @descricao " +
-                                                " Where produtoid = @id ";
-
-                        comando.Parameters.AddWithValue("id", produtos.Categoria.Id);
-                        comando.Parameters.AddWithValue("produtoid", produtos.Id);
-                        comando.Parameters.AddWithValue("descricao", produtos.Categoria.Descricao);
+                        comando.Parameters.AddWithValue("idcategoria", produtos.IdCategoria);
                         //Executando comando
                         comando.ExecuteNonQuery();
                         transacao.Commit();
@@ -85,13 +75,6 @@ namespace ProjetoSistemasWeb.Repository
                         comando.Parameters.AddWithValue("id", id);
                         //Executando comando
                         comando.ExecuteNonQuery();
-
-                        //Inserir a Categoria
-                        comando.CommandText = "Delete from categorias Where produtosid = @id ";
-                        comando.Parameters.AddWithValue("id", id);
-                        //Executando comando
-                        comando.ExecuteNonQuery();
-
                         transacao.Commit();
                     }
                     catch (Exception e)
@@ -118,9 +101,9 @@ namespace ProjetoSistemasWeb.Repository
                         comando.Connection = con;
                         comando.Transaction = transacao;
                         // Inserir o Produto
-                        comando.CommandText = "Insert into produtos " + 
-                                                " (id,codigo,descricao,acessos,preco,imagem) " +
-                                                " Values (@id,@codigo,@descricao,@acessos,@preco,@imagem)";
+                        comando.CommandText = "Insert into produtos " +
+                                                " (id,codigo,descricao,acessos,preco,imagem,idcategoria) " +
+                                                " Values (@id,@codigo,@descricao,@acessos,@preco,@imagem,@idcategoria)";
 
                         comando.Parameters.AddWithValue("id", produtos.Id);
                         comando.Parameters.AddWithValue("codigo", produtos.Codigo);
@@ -128,17 +111,7 @@ namespace ProjetoSistemasWeb.Repository
                         comando.Parameters.AddWithValue("acessos", produtos.Acessos);
                         comando.Parameters.AddWithValue("preco", produtos.Preco);
                         comando.Parameters.AddWithValue("imagem", produtos.Imagem);
-                        //Executando comando
-                        comando.ExecuteNonQuery();
-
-                        //Inserir a Categoria
-                        comando.CommandText = "Insert into categorias " +
-                                                " (id,produtoid,descricao) " +
-                                                " Values (@id,@produtoid,@descricao)";
-
-                        comando.Parameters.AddWithValue("id", produtos.Categoria.Id);
-                        comando.Parameters.AddWithValue("produtoid", produtos.Id);
-                        comando.Parameters.AddWithValue("descricao", produtos.Categoria.Descricao);
+                        comando.Parameters.AddWithValue("idcategoria", produtos.IdCategoria);
                         //Executando comando
                         comando.ExecuteNonQuery();
                         transacao.Commit();
@@ -163,7 +136,7 @@ namespace ProjetoSistemasWeb.Repository
                 comando.Connection = con;
                 // Inserir o Produto
                 comando.CommandText = " Select produtos.*, categorias.* from produtos " +
-                                        " left outer join categorias on categorias.produtoid = produtos.id " +
+                                        " left outer join categorias on categorias.id = produtos.idcategoria " +
                                         " where produtos.id = @id" ;
 
                 comando.Parameters.AddWithValue("id", id);
@@ -177,12 +150,8 @@ namespace ProjetoSistemasWeb.Repository
                         Codigo = Convert.ToInt32(leitor["codigo"]),
                         Imagem = leitor["imagem"].ToString(),
                         Acessos = Convert.ToInt32(leitor["acessos"]),
-                        Preco = (float)leitor["preco"],
-                        Categoria = new Categorias()
-                        {
-                            Id = Guid.Parse(leitor["id"].ToString()),
-                            Descricao = leitor["descricao"].ToString()
-                        }
+                        Preco = (double)leitor["preco"],
+                        IdCategoria = Guid.Parse(leitor["id"].ToString())
                     };
                 };
 
@@ -201,7 +170,7 @@ namespace ProjetoSistemasWeb.Repository
                 comando.Connection = con;
                 // Inserir o Produto
                 comando.CommandText = " Select produtos.*, categorias.* from produtos " +
-                                        " left outer join categorias on categorias.produtoid = produtos.id ";
+                                        " left outer join categorias on categorias.id = produtos.idcategoria ";
 
                 var leitor = comando.ExecuteReader();
                 while (leitor.Read())
@@ -213,13 +182,9 @@ namespace ProjetoSistemasWeb.Repository
                             Codigo = Convert.ToInt32(leitor["codigo"]),
                             Imagem = leitor["imagem"].ToString(),
                             Acessos = Convert.ToInt32(leitor["acessos"]),
-                            Preco = (float)leitor["preco"],
-                            Categoria = new Categorias()
-                            {
-                                Id = Guid.Parse(leitor["id"].ToString()),
-                                Descricao = leitor["descricao"].ToString()
-                            }
-                        }
+                            Preco = (double)leitor["preco"],
+                            IdCategoria = Guid.Parse(leitor["id"].ToString())
+                    }
                     );
                 };
 

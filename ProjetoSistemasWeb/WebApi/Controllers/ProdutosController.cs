@@ -41,11 +41,7 @@ namespace WebApi.Controllers
                         Imagem = prod.Imagem,
                         Acessos = prod.Acessos,
                         Preco = prod.Preco,
-                        Categoria = new Categorias()
-                        {
-                            Id = prod.Categoria.Id,
-                            Descricao = prod.Categoria.Descricao
-                        }
+                        IdCategoria = prod.IdCategoria
                     });
                 }
 
@@ -86,11 +82,7 @@ namespace WebApi.Controllers
                         Imagem = produto.Imagem,
                         Acessos = produto.Acessos,
                         Preco = produto.Preco,
-                        Categoria = new Categorias()
-                        {
-                            Id = produto.Categoria.Id,
-                            Descricao = produto.Categoria.Descricao
-                        }
+                        IdCategoria = produto.IdCategoria
                     };
 
                     return Request.CreateResponse(HttpStatusCode.OK, produtoModel);
@@ -126,10 +118,7 @@ namespace WebApi.Controllers
                     Imagem = produto.Imagem,
                     Acessos = produto.Acessos,
                     Preco = produto.Preco,
-                    Categoria = new ProjetoSistemasWeb.Domain.Entities.Categorias()
-                    {
-                        Descricao = produto.Descricao
-                    }
+                    IdCategoria = produto.IdCategoria
                 };
 
                 produtosAplication.Inserir(produtosDomain);
@@ -142,7 +131,6 @@ namespace WebApi.Controllers
             }
         }
 
-        [Authorize]
         public HttpResponseMessage Put(Guid id, [FromBody] Produtos produto)
         {
             try
@@ -163,10 +151,7 @@ namespace WebApi.Controllers
                     Imagem = produto.Imagem,
                     Acessos = produto.Acessos,
                     Preco = produto.Preco,
-                    Categoria = new ProjetoSistemasWeb.Domain.Entities.Categorias()
-                    {
-                        Descricao = produto.Descricao
-                    }
+                    IdCategoria = produto.IdCategoria
                 };
 
                 produtosAplication.Alterar(produtosDomain);

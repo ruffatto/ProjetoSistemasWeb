@@ -14,11 +14,7 @@ namespace ProjetoSistemasWeb.Domain.Entities
         public string Imagem { get; set; }
         public Categorias Categoria { get; set; }
         public int Acessos { get; set; }
-        public float Preco { get; set; }
-
-        public Produtos()
-        {
-            this.Categoria = new Categorias();
-        }
+        public double Preco { get; set; }
+        public Guid IdCategoria { get; set; }
     }
 }

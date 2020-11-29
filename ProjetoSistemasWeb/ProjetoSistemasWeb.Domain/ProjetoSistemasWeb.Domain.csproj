@@ -43,8 +43,11 @@
   <ItemGroup>
     <Compile Include="Entities\Categorias.cs" />
     <Compile Include="Entities\Produtos.cs" />
+    <Compile Include="Entities\Localizacao .cs" />
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ILocalizacaoRepository.cs" />
+    <Compile Include="Repository\ICategoriasRepository.cs" />
     <Compile Include="Repository\IUsuarioRepository.cs" />
     <Compile Include="Repository\IProdutosRepository.cs" />
   </ItemGroup>

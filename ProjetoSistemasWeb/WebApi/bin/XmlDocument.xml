@@ -481,6 +481,42 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="T:WebApi.Controllers.LocalizacaoController">
+            <summary>
+            API responsável por fazer a manutenção de Localizacao
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.LocalizacaoController.Get">
+            <summary>
+            Este método retorna uma listagem de todos os Localizacao
+            </summary>
+            <returns>Não possui retorno</returns>
+        </member>
+        <member name="M:WebApi.Controllers.LocalizacaoController.Get(System.Guid)">
+            <summary>
+            Este método retorna um Localizacao apartir de seu ID
+            </summary>
+            <param name="id">Id relativo a chave de busca para o Localizacao</param>
+            <returns>Retorna um Localizacao</returns>
+        </member>
+        <member name="T:WebApi.Controllers.CategoriasController">
+            <summary>
+            API responsável por fazer a manutenção de Categorias
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.CategoriasController.Get">
+            <summary>
+            Este método retorna uma listagem de todos os Categorias
+            </summary>
+            <returns>Não possui retorno</returns>
+        </member>
+        <member name="M:WebApi.Controllers.CategoriasController.Get(System.Guid)">
+            <summary>
+            Este método retorna um Categorias apartir de seu ID
+            </summary>
+            <param name="id">Id relativo a chave de busca para o Categorias</param>
+            <returns>Retorna um Categorias</returns>
+        </member>
         <member name="T:WebApi.Controllers.ProdutosController">
             <summary>
             API responsável por fazer a manutenção de Produtos
