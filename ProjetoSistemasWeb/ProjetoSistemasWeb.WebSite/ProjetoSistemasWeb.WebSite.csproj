@@ -306,6 +306,7 @@
     <Content Include="Views\Cadastros\Categorias.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Cadastros\NovoProduto.cshtml" />
+    <Content Include="Views\Cadastros\part_novo_produto.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

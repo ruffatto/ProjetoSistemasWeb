@@ -1,4 +1,46 @@
-﻿<div class="modal">
-    <p>Teste</p>
-
+﻿<div class="modal" tabindex="-1" role="dialog" id="ModalNovoProduto">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Novo Produto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive container-fluid">
+                    <form method="post" action="/Cadastros/GravarProduto"></form>
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Descrição</th>
+                                <th>Categoria</th>
+                                <th>Preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="number" /></td>
+                                <td><input type="text" /></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn-default dropdown-toggle" type="button" id="dropdownCategorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownCategorias">
+                                            <a class="dropdown-item">Teste</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><input type="number" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
