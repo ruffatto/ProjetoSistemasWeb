@@ -114,5 +114,29 @@ namespace ProjetoSistemasWeb.Repository
                 return localizacao;
             }
         }
+
+        public int SelecionarAcessadosDia()
+        {
+            int Total = 0;
+            using (NpgsqlConnection con = new NpgsqlConnection(this.stringConexao))
+            {
+                con.Open();
+
+                NpgsqlCommand comando = new NpgsqlCommand();
+                comando.Connection = con;
+                // Inserir o Produto
+                comando.CommandText = " Select count(*) as total from localizacao " +
+                                        " where data = @date ";
+
+                comando.Parameters.AddWithValue("date", DateTime.Now);
+                var leitor = comando.ExecuteReader();
+                while (leitor.Read())
+                {
+                    Total = (int)leitor["total"];
+                };
+
+                return Total;
+            }
+        }
     }
 }

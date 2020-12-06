@@ -15,10 +15,7 @@ namespace ProjetoSistemasWeb.WebSite.Controllers
         // GET: Cadastros
         public ActionResult Produtos()
         {
-            //List<Produtos> produtos = (List<Produtos>)Session["produtos"];
-            //ViewBag.listaProdutos = produtos;
-
-            APIHttpClient produtoHttp = new APIHttpClient("http://localhost:65170/api/");
+            APIHttpClient produtoHttp = new APIHttpClient("http://pic-buy.brazilsouth.cloudapp.azure.com:81/api/");
 
             var listaProdutos = produtoHttp.Get<List<Produtos>>("produtos");
 
@@ -27,44 +24,61 @@ namespace ProjetoSistemasWeb.WebSite.Controllers
             return View();
         }
 
-        public ActionResult GravarProduto()
+        public ActionResult NovoProduto()
         {
-            Produtos prod = new Produtos()
-            {
-                Codigo = 4,
-                Descricao = "Produto 4",
-                Imagem = "gs://leitura-9ce08.appspot.com/Imagens/Busca de Imagem.png",
-                Id = Guid.NewGuid(),
-                Acessos = 600,
-                Preco = 12000,
-                Categoria = new Categorias()
-                {
-                    Descricao = "Cama",
-                    Id = Guid.NewGuid()
-                }
-            };
+            APIHttpClient categoriaHttp = new APIHttpClient("http://pic-buy.brazilsouth.cloudapp.azure.com:81/api/");
 
-            APIHttpClient produtoHttp = new APIHttpClient("http://localhost:65170/api/");
-            var retorno = produtoHttp.Post<Produtos>("produtos",prod);
-            ViewBag.Retorno = retorno.Message;
+            var listaCategoria = categoriaHttp.Get<List<Categorias>>("categorias");
 
+            ViewBag.listaCategoria = listaCategoria;
             return View();
         }
 
-        public ActionResult NovoProduto()
+        public ActionResult GravarProduto(Produtos produtos)
         {
-            return View("Novo_ajax");
+            Produtos prod = new Produtos()
+            {
+                Codigo = produtos.Codigo,
+                Descricao = produtos.Descricao,
+                Imagem = produtos.Imagem,
+                Acessos = produtos.Acessos,
+                Preco = produtos.Preco,
+                IdCategoria = produtos.IdCategoria
+            };
+
+            APIHttpClient produtoHttp = new APIHttpClient("http://pic-buy.brazilsouth.cloudapp.azure.com:81/api/");
+            var retorno = produtoHttp.Post<Produtos>("produtos",prod);
+
+            return RedirectToAction("Produtos");
         }
 
         public ActionResult Categorias()
         {
-            APIHttpClient categoriaHttp = new APIHttpClient("http://localhost:65170/api/");
+            APIHttpClient categoriaHttp = new APIHttpClient("http://pic-buy.brazilsouth.cloudapp.azure.com:81/api/");
 
-            var listaCategoria = categoriaHttp.Get<List<Produtos>>("categorias");
+            var listaCategoria = categoriaHttp.Get<List<Categorias>>("categorias");
 
             ViewBag.listaCategoria = listaCategoria;
 
             return View();
+        }
+
+        public ActionResult NovaCategoria()
+        {
+            return View();
+        }
+
+        public ActionResult GravarCategoria(Categorias categorias)
+        {
+            Categorias cat = new Categorias()
+            {
+                Descricao = categorias.Descricao
+            };
+
+            APIHttpClient categoriaHttp = new APIHttpClient("http://pic-buy.brazilsouth.cloudapp.azure.com:81/api/");
+            var retorno = categoriaHttp.Post<Categorias>("categorias", cat);
+
+            return RedirectToAction("Categorias");
         }
     }
 }

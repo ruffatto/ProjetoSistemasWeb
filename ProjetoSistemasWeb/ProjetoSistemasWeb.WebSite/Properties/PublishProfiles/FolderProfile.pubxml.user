@@ -8,55 +8,85 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>10/04/2020 17:22:37</publishTime>
+      <publishTime>07/08/2020 21:52:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Extensions.Primitives.dll">
+      <publishTime>11/11/2018 00:26:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Net.Http.Headers.dll">
+      <publishTime>10/09/2019 16:35:38</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>10/04/2020 17:22:38</publishTime>
     </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
     <File Include="bin/ProjetoSistemasWeb.WebSite.dll">
-      <publishTime>10/13/2020 19:33:40</publishTime>
+      <publishTime>12/05/2020 16:04:52</publishTime>
     </File>
     <File Include="bin/ProjetoSistemasWeb.WebSite.pdb">
-      <publishTime>10/13/2020 19:33:40</publishTime>
+      <publishTime>12/05/2020 16:04:52</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Net.Http.Formatting.resources.dll">
+      <publishTime>11/28/2018 13:00:54</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Helpers.resources.dll">
+      <publishTime>11/28/2018 13:04:44</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Mvc.resources.dll">
+      <publishTime>11/28/2018 13:00:08</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Razor.resources.dll">
+      <publishTime>11/28/2018 13:00:30</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Webpages.Deployment.resources.dll">
+      <publishTime>11/28/2018 13:04:44</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Webpages.Razor.resources.dll">
+      <publishTime>11/28/2018 13:04:44</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Webpages.resources.dll">
+      <publishTime>11/28/2018 13:04:44</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:51:56</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe.config">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:51:56</publishTime>
     </File>
     <File Include="bin/roslyn/csc.rsp">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:40:20</publishTime>
     </File>
     <File Include="bin/roslyn/csi.exe">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:52:16</publishTime>
     </File>
     <File Include="bin/roslyn/csi.exe.config">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:52:16</publishTime>
     </File>
     <File Include="bin/roslyn/csi.rsp">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:40:40</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
-      <publishTime>10/04/2020 17:22:37</publishTime>
+      <publishTime>05/19/2020 01:47:18</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>10/04/2020 17:22:37</publishTime>
+      <publishTime>05/19/2020 01:51:40</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
-      <publishTime>10/04/2020 17:22:37</publishTime>
+      <publishTime>05/19/2020 01:51:58</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:49:16</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
-      <publishTime>10/04/2020 17:22:37</publishTime>
+      <publishTime>05/19/2020 01:49:32</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:50:04</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
-      <publishTime>10/04/2020 17:22:37</publishTime>
+      <publishTime>05/19/2020 01:40:20</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
       <publishTime>10/04/2020 17:22:38</publishTime>
@@ -65,10 +95,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/04/2020 17:22:38</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:40:20</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:40:20</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
       <publishTime>10/04/2020 17:22:38</publishTime>
@@ -76,8 +106,11 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="bin/roslyn/System.AppContext.dll">
       <publishTime>10/04/2020 17:22:38</publishTime>
     </File>
+    <File Include="bin/roslyn/System.Buffers.dll">
+      <publishTime>07/19/2017 17:01:28</publishTime>
+    </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/15/2018 20:29:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Console.dll">
       <publishTime>10/04/2020 17:22:38</publishTime>
@@ -106,14 +139,23 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
       <publishTime>10/04/2020 17:22:38</publishTime>
     </File>
+    <File Include="bin/roslyn/System.Memory.dll">
+      <publishTime>04/17/2019 23:24:34</publishTime>
+    </File>
     <File Include="bin/roslyn/System.Net.Http.dll">
       <publishTime>10/04/2020 17:22:38</publishTime>
     </File>
     <File Include="bin/roslyn/System.Net.Sockets.dll">
       <publishTime>10/04/2020 17:22:38</publishTime>
     </File>
+    <File Include="bin/roslyn/System.Numerics.Vectors.dll">
+      <publishTime>07/19/2017 17:01:36</publishTime>
+    </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/15/2018 20:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>11/15/2019 16:37:58</publishTime>
     </File>
     <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
       <publishTime>10/04/2020 17:22:38</publishTime>
@@ -131,10 +173,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/04/2020 17:22:38</publishTime>
     </File>
     <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>11/29/2018 23:39:18</publishTime>
     </File>
     <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>06/18/2019 19:08:48</publishTime>
     </File>
     <File Include="bin/roslyn/System.ValueTuple.dll">
       <publishTime>10/04/2020 17:22:38</publishTime>
@@ -152,19 +194,34 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/04/2020 17:22:38</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:50:06</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe.config">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:50:06</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.rsp">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:40:26</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:52:02</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
-      <publishTime>10/04/2020 17:22:38</publishTime>
+      <publishTime>05/19/2020 01:52:02</publishTime>
+    </File>
+    <File Include="bin/System.Buffers.dll">
+      <publishTime>05/15/2018 13:29:34</publishTime>
+    </File>
+    <File Include="bin/System.Memory.dll">
+      <publishTime>06/06/2018 13:29:04</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/28/2018 14:00:36</publishTime>
+    </File>
+    <File Include="bin/System.Numerics.Vectors.dll">
+      <publishTime>07/19/2017 10:01:36</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>06/06/2018 13:29:04</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
       <publishTime>10/04/2020 17:22:37</publishTime>
@@ -557,13 +614,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/04/2020 17:22:37</publishTime>
     </File>
     <File Include="Views/Cadastros/Categorias.cshtml">
-      <publishTime>10/04/2020 17:22:36</publishTime>
+      <publishTime>10/30/2020 22:26:11</publishTime>
     </File>
     <File Include="Views/Cadastros/NovoProduto.cshtml">
       <publishTime>10/04/2020 17:22:36</publishTime>
     </File>
     <File Include="Views/Cadastros/Produtos.cshtml">
-      <publishTime>10/04/2020 17:22:36</publishTime>
+      <publishTime>11/22/2020 16:48:35</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>10/09/2020 22:50:07</publishTime>
@@ -596,7 +653,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/04/2020 17:22:36</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/04/2020 17:30:28</publishTime>
+      <publishTime>12/05/2020 16:04:55</publishTime>
     </File>
   </ItemGroup>
 </Project>

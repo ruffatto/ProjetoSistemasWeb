@@ -1,0 +1,6 @@
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Domain\bin\Release\ProjetoSistemasWeb.Domain.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Domain\bin\Release\ProjetoSistemasWeb.Domain.pdb
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Domain\obj\Release\ProjetoSistemasWeb.Domain.csprojAssemblyReference.cache
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Domain\obj\Release\ProjetoSistemasWeb.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Domain\obj\Release\ProjetoSistemasWeb.Domain.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Domain\obj\Release\ProjetoSistemasWeb.Domain.pdb

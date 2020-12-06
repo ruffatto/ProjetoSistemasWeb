@@ -12,7 +12,7 @@ namespace ProjetoSistemasWeb.WebSite.API
 
     public class APIHttpClient
     {
-        private string baseAPI = "http://localhost:3809/api/";
+        private string baseAPI = "http://pic-buy.brazilsouth.cloudapp.azure.com:81/api";
         public APIHttpClient(string baseAPI)
         {
             this.baseAPI = baseAPI;
@@ -39,7 +39,7 @@ namespace ProjetoSistemasWeb.WebSite.API
             }
         }
 
-        public Retorno Post<T>(string action, T data)
+        public Guid Post<T>(string action, T data)
         {
             using (var client = new HttpClient())
             {
@@ -50,7 +50,7 @@ namespace ProjetoSistemasWeb.WebSite.API
                 HttpResponseMessage response = client.PostAsJsonAsync(action, data).Result;
                 if (response.IsSuccessStatusCode)
                 {
-                    var sucesso = response.Content.ReadAsAsync<Retorno>().Result;
+                    var sucesso = response.Content.ReadAsAsync<Guid>().Result;
                     return sucesso;
                 }
                 else

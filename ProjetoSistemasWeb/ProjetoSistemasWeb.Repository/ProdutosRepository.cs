@@ -170,7 +170,8 @@ namespace ProjetoSistemasWeb.Repository
                 comando.Connection = con;
                 // Inserir o Produto
                 comando.CommandText = " Select produtos.*, categorias.* from produtos " +
-                                        " left outer join categorias on categorias.id = produtos.idcategoria ";
+                                        " left outer join categorias on categorias.id = produtos.idcategoria " +
+                                        " order by produtos.codigo ";
 
                 var leitor = comando.ExecuteReader();
                 while (leitor.Read())
@@ -189,6 +190,70 @@ namespace ProjetoSistemasWeb.Repository
                 };
 
                 return produtos;
+            }
+        }
+
+        public Produtos SelecionarMaisAcessado()
+        {
+            Produtos prod = null;
+            using (NpgsqlConnection con = new NpgsqlConnection(this.stringConexao))
+            {
+                con.Open();
+
+                NpgsqlCommand comando = new NpgsqlCommand();
+                comando.Connection = con;
+                // Inserir o Produto
+                comando.CommandText = " Select produtos.* from produtos " +
+                                        " where max(produtos.acessos) ";
+
+                var leitor = comando.ExecuteReader();
+                while (leitor.Read())
+                {
+                    prod = new Produtos()
+                    {
+                        Id = Guid.Parse(leitor["id"].ToString()),
+                        Descricao = leitor["descricao"].ToString(),
+                        Codigo = Convert.ToInt32(leitor["codigo"]),
+                        Imagem = leitor["imagem"].ToString(),
+                        Acessos = Convert.ToInt32(leitor["acessos"]),
+                        Preco = (double)leitor["preco"],
+                        IdCategoria = Guid.Parse(leitor["id"].ToString())
+                    };
+                };
+
+                return prod;
+            }
+        }
+
+        public Produtos SelecionarMenosAcessado()
+        {
+            Produtos prod = null;
+            using (NpgsqlConnection con = new NpgsqlConnection(this.stringConexao))
+            {
+                con.Open();
+
+                NpgsqlCommand comando = new NpgsqlCommand();
+                comando.Connection = con;
+                // Inserir o Produto
+                comando.CommandText = " Select produtos.* from produtos " +
+                                        " order by acessos ";
+                
+                var leitor = comando.ExecuteReader();
+                while (leitor.Read())
+                {
+                    prod = new Produtos()
+                    {
+                        Id = Guid.Parse(leitor["id"].ToString()),
+                        Descricao = leitor["descricao"].ToString(),
+                        Codigo = Convert.ToInt32(leitor["codigo"]),
+                        Imagem = leitor["imagem"].ToString(),
+                        Acessos = Convert.ToInt32(leitor["acessos"]),
+                        Preco = (double)leitor["preco"],
+                        IdCategoria = Guid.Parse(leitor["id"].ToString())
+                    };
+                };
+
+                return prod;
             }
         }
     }

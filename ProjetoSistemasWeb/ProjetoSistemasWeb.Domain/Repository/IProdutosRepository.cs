@@ -14,5 +14,7 @@ namespace ProjetoSistemasWeb.Domain.Repository
         void Alterar(Produtos produtos);
         Produtos Selecionar(Guid id);
         List<Produtos> SelecionarTodos();
+        Produtos SelecionarMaisAcessado();
+        Produtos SelecionarMenosAcessado();
     }
 }

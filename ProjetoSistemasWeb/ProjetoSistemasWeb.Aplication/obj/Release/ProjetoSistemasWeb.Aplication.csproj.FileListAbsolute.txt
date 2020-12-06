@@ -1,0 +1,9 @@
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\bin\Release\ProjetoSistemasWeb.Aplication.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\bin\Release\ProjetoSistemasWeb.Aplication.pdb
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\bin\Release\ProjetoSistemasWeb.Domain.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\bin\Release\ProjetoSistemasWeb.Domain.pdb
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Release\ProjetoSistemasWeb.Aplication.csprojAssemblyReference.cache
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Release\ProjetoSistemasWeb.Aplication.csproj.CoreCompileInputs.cache
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Release\ProjetoSistemasWeb.Aplication.csproj.CopyComplete
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Release\ProjetoSistemasWeb.Aplication.dll
+C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Release\ProjetoSistemasWeb.Aplication.pdb

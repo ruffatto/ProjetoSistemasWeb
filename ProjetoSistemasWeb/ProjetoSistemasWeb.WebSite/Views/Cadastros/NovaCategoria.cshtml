@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "NovaCategoria";
+}
+
+<h2>Novo Registro</h2>
+
+<form method="post" action="/Cadastros/GravarCategoria">
+    <table>
+        <tbody>
+            <tr>
+                <td><label for="descricao">Descrição</label></td>
+                <td><input type="text" name="produtos.descricao" /></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Gravar" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

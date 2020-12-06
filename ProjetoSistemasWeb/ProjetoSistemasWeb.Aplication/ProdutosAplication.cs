@@ -31,7 +31,7 @@ namespace ProjetoSistemasWeb.Aplication
 
                 return produtos.Id;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -99,6 +99,33 @@ namespace ProjetoSistemasWeb.Aplication
             try
             {
                 var produtos = produtosRepository.SelecionarTodos();
+
+                return produtos;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public Produtos MaisAcessado() {
+            try
+            {
+                var produtos = produtosRepository.SelecionarMaisAcessado();
+
+                return produtos;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public Produtos MenosAcessado()
+        {
+            try
+            {
+                var produtos = produtosRepository.SelecionarMenosAcessado();
 
                 return produtos;
             }
