@@ -15,7 +15,7 @@ namespace ProjetoSistemasWeb.Repository
 
         public ProdutosRepository(string stringConexao)
         {
-            //stringConexao = "Server=127.0.0.1;Port=5432;Database=myDataBase;User Id=myUsername; Password =Fran";
+            stringConexao = "Server=127.0.0.1;Port=5432;Database=PicBuy;User Id=postgres; Password =123";
             this.stringConexao = stringConexao;
         }
 
