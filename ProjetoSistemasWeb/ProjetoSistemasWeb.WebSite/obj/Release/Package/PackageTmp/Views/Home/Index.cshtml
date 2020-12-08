@@ -51,31 +51,10 @@
         <div class="card mb-4">
             <div class="card-header">
                 <i class="fas fa-chart-area mr-1"></i>
-                Mapa
+                Mapa com zoom menor mostrando mais areas do mapa
             </div>
             <div class="card-body" id="vmap" style="width: 100%; height: 20em;"></div>
         </div>
-        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Produto</th>
-                    <th>Data</th>
-                    <th>Latitude</th>
-                    <th>Longitude</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in ViewBag.listaLocalizacao)
-                {
-                    <tr>
-                        <td>@item.CodigoProduto</td>
-                        <td>@item.Data</td>
-                        <td>@item.Lat</td>
-                        <td>@item.Long</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
     </div>
     <div class="col-xl-6">
         <div class="card mb-4">
@@ -84,6 +63,38 @@
                 Acessos dos Últimos Meses
             </div>
             <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+        </div>
+    </div>
+</div>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table mr-1"></i>
+        Produtos
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Acessos</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Imagem</td>
+                        <td>01</td>
+                        <td>Produto Teste</td>
+                        <td>Categoria Sofá</td>
+                        <td>1.000</td>
+                        <td>R$320,800</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

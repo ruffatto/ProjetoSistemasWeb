@@ -4,7 +4,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Projetos\FrontEnd</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Projetos</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
@@ -23,10 +23,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/03/2014 20:33:56</publishTime>
     </File>
     <File Include="bin/ProjetoSistemasWeb.WebSite.dll">
-      <publishTime>12/08/2020 20:18:04</publishTime>
+      <publishTime>12/07/2020 21:45:57</publishTime>
     </File>
     <File Include="bin/ProjetoSistemasWeb.WebSite.pdb">
-      <publishTime>12/08/2020 20:18:04</publishTime>
+      <publishTime>12/07/2020 21:45:57</publishTime>
     </File>
     <File Include="bin/pt-br/System.Net.Http.Formatting.resources.dll">
       <publishTime>11/28/2018 13:00:54</publishTime>
@@ -623,10 +623,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>12/07/2020 20:15:09</publishTime>
     </File>
     <File Include="Views/Cadastros/Produtos.cshtml">
-      <publishTime>12/08/2020 20:01:51</publishTime>
+      <publishTime>12/07/2020 20:39:37</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>12/08/2020 20:01:51</publishTime>
+      <publishTime>10/09/2020 22:50:07</publishTime>
     </File>
     <File Include="Views/Login/Index.cshtml">
       <publishTime>10/04/2020 17:22:36</publishTime>
@@ -635,7 +635,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/09/2020 22:50:07</publishTime>
     </File>
     <File Include="Views/Relatorios/Produtos.cshtml">
-      <publishTime>12/07/2020 22:14:38</publishTime>
+      <publishTime>10/04/2020 17:22:36</publishTime>
     </File>
     <File Include="Views/Relatorios/VariacaoDePrecos.cshtml">
       <publishTime>10/04/2020 17:22:36</publishTime>
