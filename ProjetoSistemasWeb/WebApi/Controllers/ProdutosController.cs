@@ -41,7 +41,8 @@ namespace WebApi.Controllers
                         Imagem = prod.Imagem,
                         Acessos = prod.Acessos,
                         Preco = prod.Preco,
-                        IdCategoria = prod.IdCategoria
+                        IdCategoria = prod.IdCategoria,
+                        DescCat = prod.DescCat
                     });
                 }
 

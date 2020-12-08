@@ -1,4 +1,6 @@
 ﻿using Ftec.ProjWeb.Aplicativo1.SiteWeb.Filters;
+using ProjetoSistemasWeb.WebSite.API;
+using ProjetoSistemasWeb.WebSite.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +15,12 @@ namespace ProjetoSistemasWeb.WebSite.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            APIHttpClient localizacaoHttp = new APIHttpClient("http://pic-buy.brazilsouth.cloudapp.azure.com:81/api/");
+
+            var listaLocalizacao = localizacaoHttp.Get<List<Localizacao>>("localizacao");
+
+            ViewBag.listaLocalizacao = listaLocalizacao;
+
             return View();
         }
     }

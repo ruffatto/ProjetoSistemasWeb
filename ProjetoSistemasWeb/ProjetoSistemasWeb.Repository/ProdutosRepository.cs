@@ -135,7 +135,7 @@ namespace ProjetoSistemasWeb.Repository
                 NpgsqlCommand comando = new NpgsqlCommand();
                 comando.Connection = con;
                 // Inserir o Produto
-                comando.CommandText = " Select produtos.*, categorias.* from produtos " +
+                comando.CommandText = " Select produtos.*, categorias.id as catid, categorias.descricao as desccat from produtos " +
                                         " left outer join categorias on categorias.id = produtos.idcategoria " +
                                         " where produtos.id = @id" ;
 
@@ -151,7 +151,8 @@ namespace ProjetoSistemasWeb.Repository
                         Imagem = leitor["imagem"].ToString(),
                         Acessos = Convert.ToInt32(leitor["acessos"]),
                         Preco = (double)leitor["preco"],
-                        IdCategoria = Guid.Parse(leitor["id"].ToString())
+                        IdCategoria = Guid.Parse(leitor["catid"].ToString()),
+                        DescCat = leitor["imagem"].ToString()
                     };
                 };
 
@@ -169,7 +170,7 @@ namespace ProjetoSistemasWeb.Repository
                 NpgsqlCommand comando = new NpgsqlCommand();
                 comando.Connection = con;
                 // Inserir o Produto
-                comando.CommandText = " Select produtos.*, categorias.* from produtos " +
+                comando.CommandText = " Select produtos.*, categorias.id as catid, categorias.descricao as desccat from produtos " +
                                         " left outer join categorias on categorias.id = produtos.idcategoria " +
                                         " order by produtos.codigo ";
 
@@ -184,8 +185,9 @@ namespace ProjetoSistemasWeb.Repository
                             Imagem = leitor["imagem"].ToString(),
                             Acessos = Convert.ToInt32(leitor["acessos"]),
                             Preco = (double)leitor["preco"],
-                            IdCategoria = Guid.Parse(leitor["id"].ToString())
-                    }
+                            IdCategoria = Guid.Parse(leitor["catid"].ToString()),
+                            DescCat = leitor["desccat"].ToString()
+                        }
                     );
                 };
 

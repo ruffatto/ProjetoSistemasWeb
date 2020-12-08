@@ -240,6 +240,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="models\Categorias.cs" />
+    <Compile Include="models\Localizacao.cs" />
     <Compile Include="models\Produtos.cs" />
     <Compile Include="models\Retorno.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

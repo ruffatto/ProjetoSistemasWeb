@@ -5,7 +5,7 @@
 
 <h2>Produtos</h2>
 
-<table>
+<!----<table>
     <tr>
         <td>Nome do Produto: <input type="text" maxlength="40" size="20" required /></td>
     </tr>
@@ -19,7 +19,7 @@
             </select>   
         </td>
     </tr>
-</table>
+</table>--->
 
 <div class="card mb-4">
     <div class="card-header">
@@ -37,17 +37,24 @@
                         <th>Categoria</th>
                         <th>Acessos</th>
                         <th>Preço</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><img src="~/dist/assets/img/teste.jpg" class="img-fluid align-self-sm-end" alt="teste" width="100" height="100" /></td>
-                        <td>01</td>
-                        <td>Produto Teste</td>
-                        <td>Categoria Sofá</td>
-                        <td>1.000</td>
-                        <td>R$320,800</td>
-                    </tr>
+                    @foreach (var item in ViewBag.listaProdutos)
+                    {
+                        <tr>
+                            <td><img src="@item.Imagem" class="img-fluid align-self-sm-end" alt="teste" width="100" height="100" /></td>
+                            <td>@item.Codigo</td>
+                            <td>@item.Descricao</td>
+                            <td>@item.DescCat</td>
+                            <td>@item.Acessos</td>
+                            <td>@item.Preco</td>
+                            <td><button>Editar</button></td>
+                            <td><button>Excluir</button></td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>

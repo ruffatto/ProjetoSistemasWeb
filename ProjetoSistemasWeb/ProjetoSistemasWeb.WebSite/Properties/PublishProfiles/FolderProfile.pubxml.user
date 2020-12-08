@@ -4,7 +4,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Projetos</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Projetos\FrontEnd</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
@@ -23,10 +23,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/03/2014 20:33:56</publishTime>
     </File>
     <File Include="bin/ProjetoSistemasWeb.WebSite.dll">
-      <publishTime>12/05/2020 16:04:52</publishTime>
+      <publishTime>12/08/2020 20:18:04</publishTime>
     </File>
     <File Include="bin/ProjetoSistemasWeb.WebSite.pdb">
-      <publishTime>12/05/2020 16:04:52</publishTime>
+      <publishTime>12/08/2020 20:18:04</publishTime>
     </File>
     <File Include="bin/pt-br/System.Net.Http.Formatting.resources.dll">
       <publishTime>11/28/2018 13:00:54</publishTime>
@@ -614,16 +614,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/04/2020 17:22:37</publishTime>
     </File>
     <File Include="Views/Cadastros/Categorias.cshtml">
-      <publishTime>10/30/2020 22:26:11</publishTime>
+      <publishTime>12/06/2020 02:46:01</publishTime>
+    </File>
+    <File Include="Views/Cadastros/NovaCategoria.cshtml">
+      <publishTime>12/06/2020 02:38:39</publishTime>
     </File>
     <File Include="Views/Cadastros/NovoProduto.cshtml">
-      <publishTime>10/04/2020 17:22:36</publishTime>
+      <publishTime>12/07/2020 20:15:09</publishTime>
     </File>
     <File Include="Views/Cadastros/Produtos.cshtml">
-      <publishTime>11/22/2020 16:48:35</publishTime>
+      <publishTime>12/08/2020 20:01:51</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>10/09/2020 22:50:07</publishTime>
+      <publishTime>12/08/2020 20:01:51</publishTime>
     </File>
     <File Include="Views/Login/Index.cshtml">
       <publishTime>10/04/2020 17:22:36</publishTime>
@@ -632,7 +635,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/09/2020 22:50:07</publishTime>
     </File>
     <File Include="Views/Relatorios/Produtos.cshtml">
-      <publishTime>10/04/2020 17:22:36</publishTime>
+      <publishTime>12/07/2020 22:14:38</publishTime>
     </File>
     <File Include="Views/Relatorios/VariacaoDePrecos.cshtml">
       <publishTime>10/04/2020 17:22:36</publishTime>
@@ -647,7 +650,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/04/2020 17:22:36</publishTime>
     </File>
     <File Include="Views/web.config">
-      <publishTime>10/04/2020 17:22:36</publishTime>
+      <publishTime>12/05/2020 17:19:48</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
       <publishTime>10/04/2020 17:22:36</publishTime>

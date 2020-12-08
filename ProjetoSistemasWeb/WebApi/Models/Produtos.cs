@@ -15,5 +15,6 @@ namespace WebApi.Models
         public int Acessos { get; set; }
         public double Preco { get; set; }
         public Guid IdCategoria { get; set; }
+        public string DescCat { get; set; }
     }
 }

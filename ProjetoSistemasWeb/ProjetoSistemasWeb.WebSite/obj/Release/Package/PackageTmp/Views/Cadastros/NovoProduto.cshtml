@@ -1,17 +1,47 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "NovoProduto";
 }
 
-<!DOCTYPE html>
+<h2>Novo Registro</h2>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>NovoProduto</title>
-</head>
-<body>
-    <div> 
-    </div>
-</body>
-</html>
+<form method="post" action="/Cadastros/GravarProduto">
+    <table>
+        <tbody>
+            <tr>
+                <td><label for="codigo">Código</label></td>
+                <td><input type="text" name="produtos.codigo" /></td>
+            </tr>
+            <tr>
+                <td><label for="descricao">Descrição</label></td>
+                <td><input type="text" name="produtos.descricao" /></td>
+            </tr>
+            <tr>
+                <td><label for="imagem">Imagem</label></td>
+                <td><input type="text" name="produtos.imagem" /></td>
+            </tr>
+            <tr>
+                <td><label for="categoria"> Categoria:</label></td>
+                <td>
+                    <select id="categoria" name="produtos.IdCategoria">
+                        @foreach (var categorias in ViewBag.listaCategoria)
+                        {
+                            <option value="@categorias.Id"> @categorias.Descricao </option>
+                        }
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="acessos">Acessos</label></td>
+                <td><input type="text" name="produtos.acessos" /></td>
+            </tr>
+            <tr>
+                <td><label for="preco">Preco</label></td>
+                <td><input type="text" name="produtos.preco" /></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Gravar" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

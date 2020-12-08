@@ -22,12 +22,14 @@
             </tr>
             <tr>
                 <td><label for="categoria"> Categoria:</label></td>
-                <td><select id="categoria" name="produtos.IdCategoria">
+                <td>
+                    <select id="categoria" name="produtos.IdCategoria">
                         @foreach (var categorias in ViewBag.listaCategoria)
                         {
-                            <options value="@categorias.Id"> @categorias.Descricao </options>
+                            <option value="@categorias.Id"> @categorias.Descricao </option>
                         }
-                    </select></td>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td><label for="acessos">Acessos</label></td>
