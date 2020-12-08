@@ -307,7 +307,11 @@
     <Content Include="Views\Cadastros\Categorias.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Cadastros\NovoProduto.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Cadastros\NovaCategoria.cshtml" />
+=======
+    <Content Include="Views\Cadastros\part_novo_produto.cshtml" />
+>>>>>>> 57a6fb52d7a939012c73a1e4025aa28c6efdceed
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

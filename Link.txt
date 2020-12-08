@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 http://pic-buy.brazilsouth.cloudapp.azure.com/
+=======
+http://pic-buy.brazilsouth.cloudapp.azure.com/
+>>>>>>> 5d36e0b6af381c81b1c39c760d80ef11645eca44
 http://pic-buy.brazilsouth.cloudapp.azure.com:81

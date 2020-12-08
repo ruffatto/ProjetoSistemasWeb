@@ -7,3 +7,12 @@ C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSist
 C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Debug\ProjetoSistemasWeb.Aplication.csproj.CopyComplete
 C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Debug\ProjetoSistemasWeb.Aplication.dll
 C:\Projetos\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Debug\ProjetoSistemasWeb.Aplication.pdb
+C:\Users\Arthur\Desktop\Repositorio\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\bin\Debug\ProjetoSistemasWeb.Aplication.dll
+C:\Users\Arthur\Desktop\Repositorio\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\bin\Debug\ProjetoSistemasWeb.Aplication.pdb
+C:\Users\Arthur\Desktop\Repositorio\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\bin\Debug\ProjetoSistemasWeb.Domain.dll
+C:\Users\Arthur\Desktop\Repositorio\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\bin\Debug\ProjetoSistemasWeb.Domain.pdb
+C:\Users\Arthur\Desktop\Repositorio\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Debug\ProjetoSistemasWeb.Aplication.csprojAssemblyReference.cache
+C:\Users\Arthur\Desktop\Repositorio\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Debug\ProjetoSistemasWeb.Aplication.csproj.CoreCompileInputs.cache
+C:\Users\Arthur\Desktop\Repositorio\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Debug\ProjetoSistemasWeb.Aplication.csproj.CopyComplete
+C:\Users\Arthur\Desktop\Repositorio\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Debug\ProjetoSistemasWeb.Aplication.dll
+C:\Users\Arthur\Desktop\Repositorio\ProjetoSistemasWeb\ProjetoSistemasWeb\ProjetoSistemasWeb.Aplication\obj\Debug\ProjetoSistemasWeb.Aplication.pdb
